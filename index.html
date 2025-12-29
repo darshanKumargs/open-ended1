@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenGrow — Fertilizers Marketplace</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="site">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo">GG</div>
+          <div>
+            <h1 class="brand-title">GreenGrow</h1>
+            <p class="brand-sub">Quality fertilizers — farm to field</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#catalog">Catalog</a>
+          <a href="#how">How to order</a>
+          <a href="#contact">Contact</a>
+          <a class="btn primary" href="#contact">Get Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h2>Nutrition that grows yield — trusted by farmers</h2>
+          <p class="lead">
+            Bulk & retail fertilizers, soil-specific blends, and expert agronomy support.
+            Fast delivery, safe packaging, transparent pricing.
+          </p>
+
+          <form class="search" onsubmit="return false;">
+            <input type="search" placeholder="Search fertilizer, NPK ratio, crop or brand">
+            <select>
+              <option value="">All crops</option>
+              <option>Rice</option>
+              <option>Wheat</option>
+              <option>Maize</option>
+            </select>
+            <button class="btn accent">Search</button>
+          </form>
+
+          <ul class="hero-stats">
+            <li><strong>600+</strong><span>Products</span></li>
+            <li><strong>120</strong><span>Suppliers</span></li>
+            <li><strong>99%</strong><span>On-time</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="container main-grid" id="catalog">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h3>Filters</h3>
+
+        <div class="filter-group">
+          <label>Category</label>
+          <select>
+            <option>All</option>
+            <option>NPK Blends</option>
+            <option>Urea</option>
+            <option>Organic</option>
+            <option>Micronutrients</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Price range (₹)</label>
+          <input type="range" min="100" max="5000" value="2000">
+        </div>
+
+        <div class="filter-group">
+          <label>Pack size</label>
+          <select>
+            <option>Any</option>
+            <option>1 kg</option>
+            <option>10 kg</option>
+            <option>50 kg</option>
+            <option>Bulk (ton)</option>
+          </select>
+        </div>
+
+        <div class="sidebar-cta">
+          <a class="btn" href="#contact">Request Samples</a>
+          <a class="btn primary" href="#contact">Get Bulk Quote</a>
+        </div>
+      </aside>
+
+      <!-- PRODUCT CATALOG -->
+      <section class="catalog">
+        <div class="catalog-head">
+          <h2>Featured fertilizers</h2>
+          <p class="muted">High-quality blends for every crop and soil type.</p>
+        </div>
+
+        <div class="grid">
+
+          <article class="card">
+            <img class="photo" src="images1.png" alt="NPK fertilizer">
+            <div class="card-body">
+              <h3>NPK 20-20-20</h3>
+              <p class="desc">Balanced NPK blend — ideal for fruiting and flowering crops.</p>
+              <div class="card-meta">
+                <div class="price">₹1,250 / 50 kg</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="photo" src="olant2.png" alt="Urea fertilizer">
+            <div class="card-body">
+              <h3>Urea 46%</h3>
+              <p class="desc">High-nitrogen fertiliser for leafy growth.</p>
+              <div class="card-meta">
+                <div class="price">₹980 / 50 kg</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="photo" src="plant1.png" alt="Organic compost">
+            <div class="card-body">
+              <h3>Organic Compost</h3>
+              <p class="desc">Improves soil structure & microbial activity.</p>
+              <div class="card-meta">
+                <div class="price">₹450 / 25 kg</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="photo" src="images1.png" alt="Micronutrient mix">
+            <div class="card-body">
+              <h3>Micronutrient Mix</h3>
+              <p class="desc">Corrects nutrient deficiencies and boosts yield.</p>
+              <div class="card-meta">
+                <div class="price">₹1,950 / 25 kg</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="photo" src="olant2.png" alt="Compound fertilizer">
+            <div class="card-body">
+              <h3>Compound NPK 12-32-16</h3>
+              <p class="desc">Best for root development and transplanting.</p>
+              <div class="card-meta">
+                <div class="price">₹1,380 / 50 kg</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="photo" src="plant1.png" alt="Liquid fertilizer">
+            <div class="card-body">
+              <h3>Liquid Seaweed</h3>
+              <p class="desc">Growth stimulant and stress tolerance booster.</p>
+              <div class="card-meta">
+                <div class="price">₹480 / litre</div>
+                <a class="btn" href="#contact">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-inner">
+        <div>
+          <strong>GreenGrow</strong> — trusted fertilizers & agronomy support.
+          <div class="muted">
+            Email: sales@greengrow.example · Phone: +91 98765 43210
+          </div>
+        </div>
+
+        <div class="footer-actions">
+          <a class="btn" href="#catalog">View Catalog</a>
+          <a class="btn primary" href="#contact">Request Quote</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
